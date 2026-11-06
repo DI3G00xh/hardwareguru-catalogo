@@ -55,6 +55,7 @@ message BuildRequest {
   string ram_id = 3;
   string gpu_id = 4;
   string psu_id = 5;
+  int32 ram_cantidad = 6;
 }
 
 message VerificarCompatibilidadRequest {
