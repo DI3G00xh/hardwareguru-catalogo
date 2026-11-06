@@ -1,0 +1,23 @@
+﻿# Binarios
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Archivos de entorno y locales
+.env
+*.local
+
+# Dependencias y compilación
+vendor/
+
+# Cobertura de pruebas
+*.out
+coverage.html
+
+# IDEs
+.idea/
+.vscode/
+*.swp
