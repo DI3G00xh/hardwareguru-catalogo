@@ -1,0 +1,529 @@
+[
+  {
+    "id": "cpu-9600x",
+    "tipo": "cpu",
+    "nombre": "Ryzen 5 9600X",
+    "fabricante": "AMD",
+    "tdp": 65,
+    "socket": "AM5",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "AMD",
+      "tipo": "cpu",
+      "socket": "AM5",
+      "tdp": 65,
+      "cores": 6,
+      "threads": 12,
+      "frecuenciaBase": "3.9 GHz",
+      "frecuenciaBoost": "5.4 GHz",
+      "garantia": "3 años"
+    },
+    "benchmarks": {
+      "cinebenchR24": 1200,
+      "geekbenchSingle": 2900
+    }
+  },
+  {
+    "id": "cpu-9700x",
+    "tipo": "cpu",
+    "nombre": "Ryzen 7 9700X",
+    "fabricante": "AMD",
+    "tdp": 65,
+    "socket": "AM5",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "AMD",
+      "tipo": "cpu",
+      "socket": "AM5",
+      "tdp": 65,
+      "cores": 8,
+      "threads": 16,
+      "frecuenciaBase": "3.8 GHz",
+      "frecuenciaBoost": "5.5 GHz",
+      "garantia": "3 años"
+    },
+    "benchmarks": {
+      "cinebenchR24": 1450,
+      "geekbenchSingle": 3000
+    }
+  },
+  {
+    "id": "cpu-9950x",
+    "tipo": "cpu",
+    "nombre": "Ryzen 9 9950X",
+    "fabricante": "AMD",
+    "tdp": 170,
+    "socket": "AM5",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "AMD",
+      "tipo": "cpu",
+      "socket": "AM5",
+      "tdp": 170,
+      "cores": 16,
+      "threads": 32,
+      "frecuenciaBase": "4.3 GHz",
+      "frecuenciaBoost": "5.7 GHz",
+      "garantia": "3 años"
+    },
+    "benchmarks": {
+      "cinebenchR24": 2400,
+      "geekbenchSingle": 3200
+    }
+  },
+  {
+    "id": "cpu-14600k",
+    "tipo": "cpu",
+    "nombre": "Core i5-14600K",
+    "fabricante": "Intel",
+    "tdp": 125,
+    "socket": "LGA1700",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "Intel",
+      "tipo": "cpu",
+      "socket": "LGA1700",
+      "tdp": 125,
+      "cores": 14,
+      "threads": 20,
+      "frecuenciaBoost": "5.3 GHz",
+      "garantia": "3 años"
+    },
+    "benchmarks": {
+      "cinebenchR24": 1500,
+      "geekbenchSingle": 2700
+    }
+  },
+  {
+    "id": "cpu-14700k",
+    "tipo": "cpu",
+    "nombre": "Core i7-14700K",
+    "fabricante": "Intel",
+    "tdp": 125,
+    "socket": "LGA1700",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "Intel",
+      "tipo": "cpu",
+      "socket": "LGA1700",
+      "tdp": 125,
+      "cores": 20,
+      "threads": 28,
+      "frecuenciaBoost": "5.6 GHz",
+      "garantia": "3 años"
+    },
+    "benchmarks": {
+      "cinebenchR24": 1800,
+      "geekbenchSingle": 2800
+    }
+  },
+  {
+    "id": "cpu-14900k",
+    "tipo": "cpu",
+    "nombre": "Core i9-14900K",
+    "fabricante": "Intel",
+    "tdp": 253,
+    "socket": "LGA1700",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "Intel",
+      "tipo": "cpu",
+      "socket": "LGA1700",
+      "tdp": 253,
+      "cores": 24,
+      "threads": 32,
+      "frecuenciaBoost": "6.0 GHz",
+      "garantia": "3 años"
+    },
+    "benchmarks": {
+      "cinebenchR24": 2100,
+      "geekbenchSingle": 3000
+    }
+  },
+  {
+    "id": "mb-b650",
+    "tipo": "placa",
+    "nombre": "B650 Gaming",
+    "fabricante": "ASUS",
+    "socket": "AM5",
+    "tipoRam": "DDR5",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "ASUS",
+      "tipo": "placa",
+      "socket": "AM5",
+      "tipoRam": "DDR5",
+      "formato": "ATX",
+      "slotsRam": 4,
+      "pcieGen": "4.0",
+      "garantia": "3 años"
+    }
+  },
+  {
+    "id": "mb-x670e",
+    "tipo": "placa",
+    "nombre": "X670E Creator",
+    "fabricante": "MSI",
+    "socket": "AM5",
+    "tipoRam": "DDR5",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "MSI",
+      "tipo": "placa",
+      "socket": "AM5",
+      "tipoRam": "DDR5",
+      "formato": "ATX",
+      "slotsRam": 4,
+      "pcieGen": "5.0",
+      "garantia": "3 años"
+    }
+  },
+  {
+    "id": "mb-b840",
+    "tipo": "placa",
+    "nombre": "B840M",
+    "fabricante": "ASRock",
+    "socket": "AM5",
+    "tipoRam": "DDR5",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "ASRock",
+      "tipo": "placa",
+      "socket": "AM5",
+      "tipoRam": "DDR5",
+      "formato": "Micro-ATX",
+      "slotsRam": 2,
+      "pcieGen": "4.0",
+      "garantia": "3 años"
+    }
+  },
+  {
+    "id": "mb-b760",
+    "tipo": "placa",
+    "nombre": "B760M",
+    "fabricante": "Gigabyte",
+    "socket": "LGA1700",
+    "tipoRam": "DDR5",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "Gigabyte",
+      "tipo": "placa",
+      "socket": "LGA1700",
+      "tipoRam": "DDR5",
+      "formato": "Micro-ATX",
+      "slotsRam": 4,
+      "pcieGen": "4.0",
+      "garantia": "3 años"
+    }
+  },
+  {
+    "id": "mb-z790",
+    "tipo": "placa",
+    "nombre": "Z790 Aorus",
+    "fabricante": "Gigabyte",
+    "socket": "LGA1700",
+    "tipoRam": "DDR5",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "Gigabyte",
+      "tipo": "placa",
+      "socket": "LGA1700",
+      "tipoRam": "DDR5",
+      "formato": "ATX",
+      "slotsRam": 4,
+      "pcieGen": "5.0",
+      "garantia": "3 años"
+    }
+  },
+  {
+    "id": "mb-b660",
+    "tipo": "placa",
+    "nombre": "B660M",
+    "fabricante": "ASUS",
+    "socket": "LGA1700",
+    "tipoRam": "DDR4",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "ASUS",
+      "tipo": "placa",
+      "socket": "LGA1700",
+      "tipoRam": "DDR4",
+      "formato": "Micro-ATX",
+      "slotsRam": 4,
+      "pcieGen": "4.0",
+      "garantia": "3 años"
+    }
+  },
+  {
+    "id": "ram-ddr5-16",
+    "tipo": "ram",
+    "nombre": "DDR5 16 GB 5600",
+    "fabricante": "Kingston",
+    "tipoRam": "DDR5",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "Kingston",
+      "tipo": "ram",
+      "tipoRam": "DDR5",
+      "capacidadGB": 16,
+      "velocidadMHz": 5600,
+      "garantia": "3 años"
+    }
+  },
+  {
+    "id": "ram-ddr5-32",
+    "tipo": "ram",
+    "nombre": "DDR5 32 GB 6000",
+    "fabricante": "Corsair",
+    "tipoRam": "DDR5",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "Corsair",
+      "tipo": "ram",
+      "tipoRam": "DDR5",
+      "capacidadGB": 32,
+      "velocidadMHz": 6000,
+      "garantia": "3 años"
+    }
+  },
+  {
+    "id": "ram-ddr5-64",
+    "tipo": "ram",
+    "nombre": "DDR5 64 GB 6000",
+    "fabricante": "G.Skill",
+    "tipoRam": "DDR5",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "G.Skill",
+      "tipo": "ram",
+      "tipoRam": "DDR5",
+      "capacidadGB": 64,
+      "velocidadMHz": 6000,
+      "garantia": "3 años"
+    }
+  },
+  {
+    "id": "ram-ddr4-16",
+    "tipo": "ram",
+    "nombre": "DDR4 16 GB 3200",
+    "fabricante": "Kingston",
+    "tipoRam": "DDR4",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "Kingston",
+      "tipo": "ram",
+      "tipoRam": "DDR4",
+      "capacidadGB": 16,
+      "velocidadMHz": 3200,
+      "garantia": "3 años"
+    }
+  },
+  {
+    "id": "ram-ddr4-32",
+    "tipo": "ram",
+    "nombre": "DDR4 32 GB 3200",
+    "fabricante": "Corsair",
+    "tipoRam": "DDR4",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "Corsair",
+      "tipo": "ram",
+      "tipoRam": "DDR4",
+      "capacidadGB": 32,
+      "velocidadMHz": 3200,
+      "garantia": "3 años"
+    }
+  },
+  {
+    "id": "ram-ddr4-64",
+    "tipo": "ram",
+    "nombre": "DDR4 64 GB 3600",
+    "fabricante": "G.Skill",
+    "tipoRam": "DDR4",
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "G.Skill",
+      "tipo": "ram",
+      "tipoRam": "DDR4",
+      "capacidadGB": 64,
+      "velocidadMHz": 3600,
+      "garantia": "3 años"
+    }
+  },
+  {
+    "id": "gpu-4060",
+    "tipo": "gpu",
+    "nombre": "RTX 4060",
+    "fabricante": "NVIDIA",
+    "tdp": 115,
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "NVIDIA",
+      "tipo": "gpu",
+      "tdp": 115,
+      "vramGB": 8,
+      "interfaz": "PCIe 4.0",
+      "garantia": "3 años"
+    },
+    "benchmarks": {
+      "timespy": 10500
+    }
+  },
+  {
+    "id": "gpu-5060ti",
+    "tipo": "gpu",
+    "nombre": "RTX 5060 Ti",
+    "fabricante": "NVIDIA",
+    "tdp": 180,
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "NVIDIA",
+      "tipo": "gpu",
+      "tdp": 180,
+      "vramGB": 12,
+      "interfaz": "PCIe 5.0",
+      "garantia": "3 años"
+    },
+    "benchmarks": {
+      "timespy": 14500
+    }
+  },
+  {
+    "id": "gpu-5070",
+    "tipo": "gpu",
+    "nombre": "RTX 5070",
+    "fabricante": "NVIDIA",
+    "tdp": 250,
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "NVIDIA",
+      "tipo": "gpu",
+      "tdp": 250,
+      "vramGB": 12,
+      "interfaz": "PCIe 5.0",
+      "garantia": "3 años"
+    },
+    "benchmarks": {
+      "timespy": 18000
+    }
+  },
+  {
+    "id": "gpu-7800xt",
+    "tipo": "gpu",
+    "nombre": "RX 7800 XT",
+    "fabricante": "AMD",
+    "tdp": 263,
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "AMD",
+      "tipo": "gpu",
+      "tdp": 263,
+      "vramGB": 16,
+      "interfaz": "PCIe 4.0",
+      "garantia": "3 años"
+    },
+    "benchmarks": {
+      "timespy": 17000
+    }
+  },
+  {
+    "id": "gpu-9070",
+    "tipo": "gpu",
+    "nombre": "RX 9070",
+    "fabricante": "AMD",
+    "tdp": 220,
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "AMD",
+      "tipo": "gpu",
+      "tdp": 220,
+      "vramGB": 16,
+      "interfaz": "PCIe 5.0",
+      "garantia": "3 años"
+    },
+    "benchmarks": {
+      "timespy": 19000
+    }
+  },
+  {
+    "id": "psu-450",
+    "tipo": "fuente",
+    "nombre": "450 W 80+ Bronze",
+    "fabricante": "EVGA",
+    "potenciaW": 450,
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "EVGA",
+      "tipo": "fuente",
+      "potenciaW": 450,
+      "certificacion": "80+ Bronze",
+      "modular": false,
+      "garantia": "3 años"
+    }
+  },
+  {
+    "id": "psu-500",
+    "tipo": "fuente",
+    "nombre": "500 W 80+ Bronze",
+    "fabricante": "EVGA",
+    "potenciaW": 500,
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "EVGA",
+      "tipo": "fuente",
+      "potenciaW": 500,
+      "certificacion": "80+ Bronze",
+      "modular": false,
+      "garantia": "3 años"
+    }
+  },
+  {
+    "id": "psu-650",
+    "tipo": "fuente",
+    "nombre": "650 W 80+ Gold",
+    "fabricante": "Corsair",
+    "potenciaW": 650,
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "Corsair",
+      "tipo": "fuente",
+      "potenciaW": 650,
+      "certificacion": "80+ Gold",
+      "modular": true,
+      "garantia": "5 años"
+    }
+  },
+  {
+    "id": "psu-750",
+    "tipo": "fuente",
+    "nombre": "750 W 80+ Gold",
+    "fabricante": "Corsair",
+    "potenciaW": 750,
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "Corsair",
+      "tipo": "fuente",
+      "potenciaW": 750,
+      "certificacion": "80+ Gold",
+      "modular": true,
+      "garantia": "5 años"
+    }
+  },
+  {
+    "id": "psu-850",
+    "tipo": "fuente",
+    "nombre": "850 W 80+ Platinum",
+    "fabricante": "Seasonic",
+    "potenciaW": 850,
+    "origen": "seed",
+    "especificaciones": {
+      "fabricante": "Seasonic",
+      "tipo": "fuente",
+      "potenciaW": 850,
+      "certificacion": "80+ Platinum",
+      "modular": true,
+      "garantia": "10 años"
+    }
+  }
+]
+

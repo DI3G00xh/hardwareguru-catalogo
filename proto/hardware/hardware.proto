@@ -1,0 +1,69 @@
+syntax = "proto3";
+
+package hardware;
+
+option go_package = "github.com/DI3G00xh/hardwareguru-catalogo/proto/hardware;hardwarepb";
+
+// Servicio expuesto por el microservicio en Go
+service CatalogoService {
+  rpc ListarComponentes (ListarComponentesRequest) returns (ListarComponentesResponse);
+  rpc ObtenerSpecs (ObtenerSpecsRequest) returns (ComponenteDetalleResponse);
+  rpc VerificarCompatibilidad (VerificarCompatibilidadRequest) returns (CompatibilidadResponse);
+}
+
+message ListarComponentesRequest {
+  string tipo = 1; // "cpu", "placa", "ram", "gpu", "fuente" o vacío para todos
+}
+
+message ComponenteResumen {
+  string id = 1;
+  string tipo = 2;
+  string nombre = 3;
+  string fabricante = 4;
+  int32 tdp = 5;
+  string socket = 6;
+  string tipo_ram = 7;
+  int32 potencia_w = 8;
+  string origen = 9;
+}
+
+message ListarComponentesResponse {
+  repeated ComponenteResumen componentes = 1;
+}
+
+message ObtenerSpecsRequest {
+  string id = 1;
+}
+
+message ComponenteDetalleResponse {
+  string id = 1;
+  string tipo = 2;
+  string nombre = 3;
+  string fabricante = 4;
+  int32 tdp = 5;
+  string socket = 6;
+  string tipo_ram = 7;
+  int32 potencia_w = 8;
+  string origen = 9;
+  string especificaciones_json = 10; // Serializado como string JSON
+  string benchmarks_json = 11;       // Serializado como string JSON
+}
+
+message BuildRequest {
+  string cpu_id = 1;
+  string motherboard_id = 2;
+  string ram_id = 3;
+  string gpu_id = 4;
+  string psu_id = 5;
+}
+
+message VerificarCompatibilidadRequest {
+  BuildRequest build = 1;
+}
+
+message CompatibilidadResponse {
+  bool compatible = 1;
+  repeated string errores = 2;
+  int32 consumo_estimado_w = 3;
+}
+
