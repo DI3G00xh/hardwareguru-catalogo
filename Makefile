@@ -1,4 +1,4 @@
-.PHONY: proto test run seed
+.PHONY: proto test test-coverage test-integration run seed
 
 proto:
 	protoc --proto_path=proto/hardware \
@@ -14,3 +14,10 @@ seed:
 
 test:
 	go test -v -cover ./...
+
+test-coverage:
+	go test -v -coverprofile=coverage.out ./internal/...
+	go tool cover -func=coverage.out
+
+test-integration:
+	go test -v ./tests/...
