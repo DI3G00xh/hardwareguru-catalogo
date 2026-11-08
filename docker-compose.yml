@@ -17,6 +17,25 @@ services:
       timeout: 5s
       retries: 5
 
+  catalogo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hardwareguru-catalogo
+    restart: unless-stopped
+    environment:
+      PORT: 50051
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: ${DB_USER:-postgres}
+      DB_PASSWORD: ${DB_PASSWORD:-postgres}
+      DB_NAME: ${DB_NAME:-hardwareguru_catalogo}
+      DB_SSLMODE: disable
+    ports:
+      - "${PORT:-50051}:50051"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
 volumes:
   postgres_data:
-
