@@ -10,7 +10,11 @@ import (
 
 	"github.com/DI3G00xh/hardwareguru-catalogo/internal/config"
 	"github.com/DI3G00xh/hardwareguru-catalogo/internal/repository"
+	"github.com/DI3G00xh/hardwareguru-catalogo/internal/service"
+	grpcTransport "github.com/DI3G00xh/hardwareguru-catalogo/internal/transport/grpc"
+	hardwarepb "github.com/DI3G00xh/hardwareguru-catalogo/proto/hardware"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/reflection"
 )
 
 func main() {
@@ -19,11 +23,14 @@ func main() {
 	// Conectar a la base de datos y ejecutar AutoMigrate
 	db, err := repository.NewPostgresDB(cfg)
 	if err != nil {
-		log.Printf("ADVERTENCIA: No se pudo conectar a PostgreSQL (%v). Verifique que el servicio esté arriba.", err)
-	} else {
-		log.Println("Conexión a PostgreSQL establecida y AutoMigrate completado exitosamente.")
-		_ = db
+		log.Fatalf("Error crítico al inicializar la base de datos PostgreSQL: %v", err)
 	}
+	log.Println("Conexión a PostgreSQL establecida y AutoMigrate completado exitosamente.")
+
+	repo := repository.NewComponenteRepository(db)
+	catalogoSvc := service.NewCatalogoService(repo)
+	compatibilidadSvc := service.NewCompatibilidadService(repo)
+	handler := grpcTransport.NewHandler(catalogoSvc, compatibilidadSvc)
 
 	listener, err := net.Listen("tcp", fmt.Sprintf(":%s", cfg.Port))
 	if err != nil {
@@ -31,8 +38,9 @@ func main() {
 	}
 
 	grpcServer := grpc.NewServer()
+	hardwarepb.RegisterCatalogoServiceServer(grpcServer, handler)
+	reflection.Register(grpcServer)
 
-	// Canal para apagado elegante (Graceful Shutdown)
 	stopChan := make(chan os.Signal, 1)
 	signal.Notify(stopChan, os.Interrupt, syscall.SIGTERM)
 

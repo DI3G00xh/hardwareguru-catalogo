@@ -7,16 +7,17 @@
 package hardwarepb
 
 import (
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
-
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
+	// Verify that this generated code is sufficiently up-to-date.
 	_ = protoimpl.EnforceVersion(20 - protoimpl.MinVersion)
+	// Verify that runtime/protoimpl is sufficiently up-to-date.
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
@@ -52,6 +53,7 @@ func (x *ListarComponentesRequest) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
+// Deprecated: Use ListarComponentesRequest.ProtoReflect.Descriptor instead.
 func (*ListarComponentesRequest) Descriptor() ([]byte, []int) {
 	return file_hardware_proto_rawDescGZIP(), []int{0}
 }
@@ -645,14 +647,14 @@ func file_hardware_proto_rawDescGZIP() []byte {
 
 var file_hardware_proto_msgTypes = make([]protoimpl.MessageInfo, 8)
 var file_hardware_proto_goTypes = []any{
-	(*ListarComponentesRequest)(nil),
-	(*ComponenteResumen)(nil),
-	(*ListarComponentesResponse)(nil),
-	(*ObtenerSpecsRequest)(nil),
-	(*ComponenteDetalleResponse)(nil),
-	(*BuildRequest)(nil),
-	(*VerificarCompatibilidadRequest)(nil),
-	(*CompatibilidadResponse)(nil),
+	(*ListarComponentesRequest)(nil),       // 0: hardware.ListarComponentesRequest
+	(*ComponenteResumen)(nil),              // 1: hardware.ComponenteResumen
+	(*ListarComponentesResponse)(nil),      // 2: hardware.ListarComponentesResponse
+	(*ObtenerSpecsRequest)(nil),            // 3: hardware.ObtenerSpecsRequest
+	(*ComponenteDetalleResponse)(nil),      // 4: hardware.ComponenteDetalleResponse
+	(*BuildRequest)(nil),                   // 5: hardware.BuildRequest
+	(*VerificarCompatibilidadRequest)(nil), // 6: hardware.VerificarCompatibilidadRequest
+	(*CompatibilidadResponse)(nil),         // 7: hardware.CompatibilidadResponse
 }
 var file_hardware_proto_depIdxs = []int32{
 	1, // 0: hardware.ListarComponentesResponse.componentes:type_name -> hardware.ComponenteResumen

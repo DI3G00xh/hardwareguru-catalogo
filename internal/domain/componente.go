@@ -174,7 +174,7 @@ func (c *Componente) ObtenerTDP() int {
 	return 0
 }
 
-// ObtenerPotenciaW retorna la potencia en Watts del componente 
+// ObtenerPotenciaW retorna la potencia en Watts del componente
 func (c *Componente) ObtenerPotenciaW() int {
 	if c.PotenciaW > 0 {
 		return c.PotenciaW
@@ -200,4 +200,3 @@ func (c *Componente) ObtenerPotenciaW() int {
 	}
 	return 0
 }
-
